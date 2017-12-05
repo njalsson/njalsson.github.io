@@ -5,6 +5,7 @@
 	</head>
 	<body>
 		<div id="info">Three.js</div>
+		<div id="info">Use the mouse to navigate </div>
 		<script src="js/three.js"></script>
 		<script src="js/controls/OrbitControls.js"></script>
 		<script src="js/ObjectLoader.js"></script>
@@ -52,8 +53,6 @@
 			{
 				requestAnimationFrame( animate );
 				renderer.render(scene, camera);
-				object.rotateY(15);
-				object.rotateZ(15);
 			};
 
 
