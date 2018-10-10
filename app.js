@@ -3,12 +3,13 @@ function setup(){
 	translate(250,250);
 	rotate(PI);
 }
+
 let x;
 let y;
 let equation;
 let newequation;
-
-$('#button').click(function() { 101
+let zoom = 1;
+$('#button').click(function() { 
 
 
 
@@ -19,10 +20,9 @@ $('#button').click(function() { 101
 	smooth();
 	noFill();
 	beginShape();
-	for(x = -250; x < 250; x+=1){
+	for(x = -250; x < 250; x+=10){
 		newequation = equation;
 		newequation = newequation.replace("-x", "\(x\)");
-		newequation = newequation.replace("x", "\(x\)");
 		newequation = newequation.replace("x",x);
 		newequation = newequation.replace("^", "**");
 		console.log(newequation);
@@ -40,4 +40,10 @@ $('#clearbutton').click(function(){
 let canvas = document.getElementById("myCanvas");
 	clear();
 
+});
+
+$('#zoomin').click(function(){
+	console.log('zoooom');
+	zoom += 1;
+	scale(zoom);
 });
