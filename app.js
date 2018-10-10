@@ -22,6 +22,7 @@ $('#button').click(function() { 101
 	for(x = -250; x < 250; x+=1){
 		newequation = equation;
 		newequation = newequation.replace("-x", "\(x\)");
+		newequation = newequation.replace("x", "\(x\)");
 		newequation = newequation.replace("x",x);
 		newequation = newequation.replace("^", "**");
 		console.log(newequation);
