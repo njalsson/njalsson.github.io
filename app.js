@@ -23,6 +23,7 @@ $('#button').click(function() {
 	for(x = -250; x < 250; x+=10){
 		newequation = equation;
 		newequation = newequation.replace("-x", "\(x\)");
+		newequation = newequation.replace("x",  "\(x\)");
 		newequation = newequation.replace("x",x);
 		newequation = newequation.replace("^", "**");
 		console.log(newequation);
