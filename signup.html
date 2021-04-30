@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ship O' cereal</title>
+		<link rel="icon" type="image/png" href="images/favicon-lightmode.png"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+		<link href="style.css" rel="stylesheet">
+		<script src="test.js"></script>
+		
+	</head>
+	<body onload="favswitch()">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D8D8D8;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="homepage.html">Ship O' Cereal</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="mycart.html">My Cart</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit" style="margin-right:20px;">Search</button>
+					</form>
+					<div class="dropdown">
+						<button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						Login/Sign up
+						</button>
+						<ul id="profile_dd" class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item" href="login.html">Log in</a></li>
+							<li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="login-container" class="container">
+			<script src="test.js"></script>
+            <form id="logins" action="index.html"> 
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputUser" aria-describedby="userHelp" style="width: 30%;" required>
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Username</label>
+                  <input type="username" class="form-control" id="exampleInputUser" aria-describedby="userHelp" style="width: 30%;" required>
+                </div>
+                <div class="mb-3">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Password</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="password" id="password" autocomplete="current-password" minlength="8" class="form-control" aria-describedby="passwordHelpInline" style="width: 30%;" required onkeyup="check()">
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                          Must be at least 8 characters long.
+						  
+                        </span>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Confirm password</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="password" id="confirm_password" class="form-control" aria-describedby="passwordHelpInline" style="width: 30%;" required onkeyup="check()">
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+							<span id='message'></span>
+                        </span>
+                      </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+		</div>
+<nav class="navbar  navbar-light bg-light" style="margin-top: 26%;">
+    <p>Copyright 2021 © Ship O' Cereal</p>
+  </div>
+</nav>
+	</body>
+</html>

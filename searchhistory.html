@@ -23,7 +23,7 @@
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="mycart.html">
                                  <img src="images/shopping-cart.png" style="width: 40px; height: 40px;">
-								 <span id="cart">My Cart(0)</span></a>
+                                My Cart</a>
 						</li>
 					</ul>
 					<form class="d-flex">
@@ -44,47 +44,64 @@
 				</div>
 			</div>
 		</nav>
-        <br>
 		<div class="container">
+            <h2 style="margin-top: 50px;">SEARCH HISTORY</h2>
 			<div class="row">
-				<div class="card col border-0" style="width: 18rem;">
-					<img src="images/cheerios.jpeg" class="card-img-top" alt="..." style="width:300px;height:400px;">
-					<div class="card-body">
-                        <div style="font-size: 13px;">
-                        product number 123456765432 
-						</div>
-					</div>
-				</div>
-				<div class="card col border-0" style="width: 18rem;">
-                    <br>
-                    <h5 class="card-title">Cheerios</h5>
-					<div class="card-body">
-                        <div class="position-absolute top-99 start-0">
-						<h4 class="card-subtitle mb-2 text-muted">7000kr</h4>
-                        
-                        <!-- <br><br><br><br><br><br><br><br><br> -->
-<!-- 						<a href="#" class="btn btn-primary">add to cart</a>
-                        <input type="number" style="width: 45px; padding: 1px" value="69">
- -->
-
-<div class="input-group mb-3" style="margin-top: 90%;">
-  <button class="btn btn-outline-primary" type="button" id="button-addon1" onclick="updatecart()">add to cart</button>
-  <input placeholder="amount of boxes" type="text" onkeypress='validate(event)' class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 150px;">
-</div>
-
-                    </div>
-					</div>
-				</div>
-				<div class="card col border-0" style="width: 18rem;">
-					<img src="images/cereal nutrition facts.png" class="card-img-top" alt="...">
-
-					</div>
-			</div>
-		</div>
-		<nav class="navbar  navbar-light bg-light" style="margin-top: 40vh;">
-            <div class="container-fluid">
+				<table style="width:30% ;">
+					<thead>
+						<tr>
+							<th scope="col"> </th>
+							<th scope="col"> </th>
+							<th scope="col"> </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr >
+							<td><a href="orderhistory.html" style="color: black;">ORDER HISTORY</a></td>
+							<td><a href="searchhistory.html" style="color: black; font-weight: bolder">SEARCH HISTORY</a></td>
+							<td><a href="editprofile.html" style="color: black;">EDIT PROFILE</a></td>
+						</tr>
+					</tbody>
+					</table>
+					<hr>
+<script src="test.js"></script>
+<div class="container">
+    <div class="row">
+        <table class="table table-white">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row1">
+                    <td>21.01.2021</td>
+                    <td>"lucky charms"</td>
+                    <td><a href='javascript:delete_row1()'  style="color: black;"><b><u>X</u></b></a></td>
+                </tr>
+                <tr id="row2">
+                    <td>06.09.2420</td>
+                    <td>"naked girls cereal"</td>
+                    <td><a href='javascript:delete_row2()' style="color: black;"><b><u>X</u></b></a></td>
+                </tr>
+                <tr id="row3">
+                    <td>05.02.2021</td>
+                    <td>"cheerios"</td>
+                    <td><a href='javascript:delete_row3()' style="color: black;"><b><u>X</u></b></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> </td>
+                    <td><a href='javascript:delete_all()' style="color: black;"><b><u>clear search history</u></b></a></td>
+                </tr>
+            </tbody>
+        </table>
+		<nav class="navbar fixed-bottom  navbar-light bg-light">
+			<div class="container-fluid">
 				<p>Copyright 2021 © Ship O' Cereal</p>
-            </div>
-          </nav>
+			</div>
+		</nav>
 	</body>
 </html>

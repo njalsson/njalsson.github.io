@@ -22,8 +22,8 @@
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="mycart.html">
-                                 <img src="images/shopping-cart.png" style="width: 40px; height: 40px;">
-								 <span id="cart">My Cart(0)</span></a>
+								<img src="images/shopping-cart.png" style="width: 40px; height: 40px;">
+							My Cart</a>
 						</li>
 					</ul>
 					<form class="d-flex">
@@ -44,47 +44,65 @@
 				</div>
 			</div>
 		</nav>
-        <br>
 		<div class="container">
+			<h1>Purchase completed</h1>
+			<h4>Your order</h4>
 			<div class="row">
-				<div class="card col border-0" style="width: 18rem;">
-					<img src="images/cheerios.jpeg" class="card-img-top" alt="..." style="width:300px;height:400px;">
-					<div class="card-body">
-                        <div style="font-size: 13px;">
-                        product number 123456765432 
-						</div>
-					</div>
-				</div>
-				<div class="card col border-0" style="width: 18rem;">
-                    <br>
-                    <h5 class="card-title">Cheerios</h5>
-					<div class="card-body">
-                        <div class="position-absolute top-99 start-0">
-						<h4 class="card-subtitle mb-2 text-muted">7000kr</h4>
-                        
-                        <!-- <br><br><br><br><br><br><br><br><br> -->
-<!-- 						<a href="#" class="btn btn-primary">add to cart</a>
-                        <input type="number" style="width: 45px; padding: 1px" value="69">
- -->
+					<table class="col table table-light">
+					<thead>
+						<tr>
+							<th scope="col">Product</th>
+							<th scope="col">Quantity</th>
+							<th scope="col">price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Lucky charms</th>
+							<td>1</td>
+							<td>750</td>
+						</tr>
+						<tr>
+							<th scope="row">Cocoa puffs</th>
+							<td>2</td>
+							<td>2500</td>
+						</tr>
+						<tr>
+							<th scope="row">mega nuts</th>
+							<td>5</td>
+							<td>5000</td>
+						</tr>
+						<tr>
+							<td></td>
+							<th scope="row">total</th>
+							<td> 8250</td>
+						</tr>
+					</tbody>
+				</table>
 
-<div class="input-group mb-3" style="margin-top: 90%;">
-  <button class="btn btn-outline-primary" type="button" id="button-addon1" onclick="updatecart()">add to cart</button>
-  <input placeholder="amount of boxes" type="text" onkeypress='validate(event)' class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 150px;">
-</div>
-
-                    </div>
-					</div>
-				</div>
-				<div class="card col border-0" style="width: 18rem;">
-					<img src="images/cereal nutrition facts.png" class="card-img-top" alt="...">
-
-					</div>
-			</div>
+			
+			<br><br><br><br><br>	
+			<h1>Thanks for the order</h4>
 		</div>
-		<nav class="navbar  navbar-light bg-light" style="margin-top: 40vh;">
-            <div class="container-fluid">
+		</div>
+
+
+			<div>
+			<a href="orderhistory.html" class="btn btn-secondary" style="width: fit-content; float: left; margin-left: 70rem;" >View my orders   </a>
+	
+	</div>
+	
+
+
+
+				<a href="index.html" class="btn btn-warning" style="width: fit-content; float: left; margin-left: 1rem;">back to front page</a>
+
+		</div>
+
+		<nav class="navbar fixed-bottom  navbar-light bg-light">
+			<div class="container-fluid">
 				<p>Copyright 2021 © Ship O' Cereal</p>
-            </div>
-          </nav>
+			</div>
+		</nav>
 	</body>
 </html>
